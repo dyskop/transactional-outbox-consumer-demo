@@ -1,0 +1,9 @@
+version: '3'
+services:
+  delivery-service:
+    container_name: app-container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8080"
